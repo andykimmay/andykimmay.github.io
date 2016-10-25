@@ -42,3 +42,11 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+html { 
+  background: url(https://github.com/andykimmay/andykimmay.github.io/blob/master/drawing.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
