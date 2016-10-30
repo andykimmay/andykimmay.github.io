@@ -1,1 +1,0 @@
-# andykimmay.github.io
