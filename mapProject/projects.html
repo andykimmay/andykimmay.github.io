@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0/raphael-min.js" charset="utf-8"></script>
+		<script src="../mapProject/js/jquery.mapael.js" charset="utf-8"></script>
+		<script src="../mapProject/js/maps/france_departments.js" charset="utf-8"></script>
+		<script src="../mapProject/js/maps/world_countries.js" charset="utf-8"></script>
+		<script src="../mapProject/js/maps/usa_states.js" charset="utf-8"></script>
+
+		<style type="text/css">
+			.mapael .map {
+            position: relative;
+			}
+			
+			.mapael .mapTooltip {
+				position: absolute;
+				background-color: #fff;
+				moz-opacity: 0.70;
+				opacity: 0.70;
+				filter: alpha(opacity=70);
+				border-radius: 10px;
+				padding: 10px;
+				z-index: 1000;
+				max-width: 200px;
+				display: none;
+				color: #343434;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			$(function () {
+				$(".mapcontainer").mapael({
+					map: {
+						// Set the name of the map to display
+						name : "world_countries"
+					},
+					legend: {
+						area: {
+							display: false,
+							slices: [
+								{
+									min: 1,
+									max: 2,
+									attrs: {
+										fill: "#5faa32"
+									}
+								},
+								{
+									min: 3,
+									max: 4,
+									attrs: {
+										fill: "#cf5874"
+									}
+								}
+							]
+						}
+					},
+					areas: {
+						"DE": {
+							value: "1",
+							href: "/mapProject/pic02.jpg",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"BE": {
+							value: "1",
+							href: "/mapProject/pic02.jpg",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"LU": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"FR": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"CH": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"NL": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"IT": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"IN": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"ID": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"CN": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"TH": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"JM": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"CA": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"US": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"JP": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"KR": {
+							value: "1",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"SG": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"ES": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"PT": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"GB": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"PH": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"MY": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"MM": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"VN": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"LA": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"KH": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"IE": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+						"IS": {
+							value: "3",
+							href: "#",
+							tooltip: {content: "<span style=\"font-weight:bold;\">Nord (59)</span><br />Population : 2617939"}
+						},
+					}
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Andy Kim</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="projects.html" class="active">Projects</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Travel Map</h1>
+							    <div class="mapcontainer">
+									<div class="map">
+										<span>Alternative content for the map</span>
+									</div>
+								</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+							
+					<ul class="icons">
+						<li><a href="https://twitter.com/AndyK5" class="fa-twitter" target="_blank" ><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=1581810130" class="fa-facebook" target="_blank" ><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/andykimmay" class="fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.instagram.com/andykim5/" class="fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/andykim5" class="fa-linkedin" target="_blank" ><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

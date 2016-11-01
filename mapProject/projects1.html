@@ -13,6 +13,28 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0/raphael-min.js" charset="utf-8"></script>
+		<script src="../mapProject/js/jquery.mapael.js" charset="utf-8"></script>
+		<script src="../mapProject/js/maps/france_departments.js" charset="utf-8"></script>
+		<script src="../mapProject/js/maps/world_countries.js" charset="utf-8"></script>
+		<script src="../mapProject/js/maps/usa_states.js" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			$(function () {
+  // Mapael initialisation
+            $world = $(".world");
+            $world.mapael({
+                map: {
+                    name: "world_countries",
+				}
+
+			})
+			};
+		</script>
+		
 	</head>
 	<body>
 
@@ -33,9 +55,12 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Javascript Map</h1>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h1 class="major">Travel Map</h1>
+							    <div class="mapcontainer">
+									<div class="map">
+										<span>Alternative content for the map</span>
+									</div>
+								</div>
 						</div>
 					</section>
 
