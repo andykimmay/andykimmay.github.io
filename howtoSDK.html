@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>How to Guide - Conclusion</title>
+		<title>How to Guide - SDK</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -18,7 +18,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="howtoHome.html"  class="title">How to Guide</a>
+				<a href="howtoHome.html" class="title">How to Guide</a>
 				
 			</header>
 
@@ -28,11 +28,24 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Conclusion</h1>
-							<p>That's the entire how-to guide on how to use the Pinterest API! Hope you learned something!</p>
+							<h1 class="major">Pinterest JavaScript SDK</h1>
+							<p>The previous page discusses how we would normally make API calls. And we can make calls to the Pinterest API using that method. However,
+							Pinterest also provides a software development kit (SDK) that we can use instead, which simplifies a lot of the code. Instead of writing all of
+							that code, we can instead write something like this:
+							<br><br>
+							<code>PDK.request('/pins/', 'POST', data, callback);</code>
+							<br><br>The code above is a request to the Pinterest API to create a new Pin. Much easier and simpler than the XMLHttpRequest object. Anything that
+							you wanted to do with the API is available through the SDK; more information on what you can do can be found here:
+							<ul>
+							<li><a href="https://developers.pinterest.com/docs/api/users/?">Users</a></li>
 							
-							<a href="howtoSDK.html" class="button special">Back</a>
-							<a href="howtoHome.html" class="button special">Home</a>
+							<li><a href="https://developers.pinterest.com/docs/api/boards/?">Boards</a></li>
+							
+							<li><a href="https://developers.pinterest.com/docs/api/pins/?">Pins</a></li>
+							</ul>
+							</p>
+							<a href="howtoAPI.html" class="button special">Back</a>
+							<a href="howtoSuccess.html" class="button special">Next</a>
 						</div>	
 					</section>
 
@@ -59,21 +72,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
-			<script type="text/javascript">
-(function(d){
-    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
-    p.type = 'text/javascript';
-    p.async = true;
-    p.src = '//assets.pinterest.com/js/pinit.js';
-    f.parentNode.insertBefore(p, f);
-}(document));
-</script>
-<script
-    type="text/javascript"
-    async defer
-    src="//assets.pinterest.com/js/pinit.js"
-></script>
-
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

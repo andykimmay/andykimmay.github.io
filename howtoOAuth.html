@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>How to Guide - Conclusion</title>
+		<title>How to Guide - OAuth</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -18,7 +18,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="howtoHome.html"  class="title">How to Guide</a>
+				<a href="howtoHome.html" class="title">How to Guide</a>
 				
 			</header>
 
@@ -28,11 +28,18 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Conclusion</h1>
-							<p>That's the entire how-to guide on how to use the Pinterest API! Hope you learned something!</p>
+							<h1 class="major">Brief Aside on OAuth</h1>
+							<p>Before we dive into the nitty gritty, we should take a quick aside to discuss OAuth. OAuth will allow us to access users' Pinterest accounts and content 
+							without telling us their password. How does this work?
+							<br><ul>
+							<li>The Pinterest API allows us to direct our users to Pinterest to ask for their permission. </li>
+							<li>Once the user approves, we will receive an authorization code.</li>
+							<li>We will exchange this code for a token, which is a permanent credential. We can now use this token (by including it on our API calls) to perform actions.</li>
+							</ul>
+							<br>You can read more about OAuth <a href ="https://oauth.net/2/">here</a>.</p>
 							
-							<a href="howtoSDK.html" class="button special">Back</a>
-							<a href="howtoHome.html" class="button special">Home</a>
+							<a href="howtoStart.html" class="button special">Back</a>
+							<a href="howtoAPI.html" class="button special">Next</a>
 						</div>	
 					</section>
 
@@ -59,21 +66,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
-			<script type="text/javascript">
-(function(d){
-    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
-    p.type = 'text/javascript';
-    p.async = true;
-    p.src = '//assets.pinterest.com/js/pinit.js';
-    f.parentNode.insertBefore(p, f);
-}(document));
-</script>
-<script
-    type="text/javascript"
-    async defer
-    src="//assets.pinterest.com/js/pinit.js"
-></script>
-
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

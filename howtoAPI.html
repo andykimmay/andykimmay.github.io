@@ -15,17 +15,10 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Andy Kim</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="../mapProject/travelmap.html" class="active">Travel Map</a></li>
-						<li><a href="howtoHome.html">How to Guide</a></li>
-					</ul>
-				</nav>
+				<a href="howtoHome.html"  class="title">How to Guide</a>
+				
 			</header>
 
 		<!-- Wrapper -->
@@ -35,10 +28,36 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">API Calls</h1>
-							<p> </p>
-							<p>W</p>
-							<a href="howtoStart.html" class="button special">Back</a>
-							<a href="howtoPinterest.html" class="button special">Next</a>
+							<p>So we're all set up to use the Pinterest API. How do we use it? In JavaScript, we make requests through what is known as 
+							AJAX (Asynchronous JavaScript and XML). If you want to learn more about AJAX, you can read up on it on the
+							<a href="https://developer.mozilla.org/en-US/docs/AJAX">Mozilla Developer Network</a>. 
+							In this section, we will take a look at the generic standard format to break down the process. Afterwards, we'll replace the boilerplate 
+							language with the specific syntax needed to access the Pinterest API.
+							<br><br> We will be working with an object called XMLHttpRequest through which we make calls to the API.
+							<ul>
+								<li>First, we start by making the request <code>var request = new XMLHttpRequest();</code></li>
+								<li>Next, we specify the request type <code>request.open(requestMethod, queryURL + queryString);</code></li>
+								<li>We are sending two parameters: the request method (GET,POST,PUT,DELETE) and the query. This is how we tell Pinterest
+								what information we want. We need to use the syntax that Pinterest provides in their official documentation to make sure that we get back 
+								the data that we want. As mentioned earlier, we'll go over how to do this in the next section.</li>
+								<li>Now we will need our App ID. Pinterst requires a header which contains the App ID with every API request. This way, they know who is making
+								the request. We do this with the following line <code> request.setRequestHeader("Client-ID", apiKey); </code></li>
+								<li>Then we tell our application what to do once we receive a response. We’ll come back to this later, but this is the format.
+								<code>request.addEventListener(“load”, function() {... } );</code></li>
+								<li>Finally, we send our request with <code>request.send(null);</code>
+							<br>
+							<br>
+							This is what it looks like when its all put together:
+							<br>
+							<pre><code>var request = new XMLHttpRequest();
+request.open(requestMethod, queryURL + queryString);
+request.setRequestHeader("App-ID", apiKey); 
+request.addEventListener(“load”, function() {...} );
+request.send(null);</code></pre>
+							<br>
+							</p>
+							<a href="howtoOAuth.html" class="button special">Back</a>
+							<a href="howtoSDK.html" class="button special">Next</a>
 						</div>	
 					</section>
 
