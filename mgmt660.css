@@ -1,3 +1,8 @@
 p {
     text-align: center
 }
+
+body {
+    background-image: url("https://ichef-1.bbci.co.uk/news/1024/cpsprodpb/693C/production/_95804962_p0517py6.jpg");
+    background-repeat: repeat;
+}
